@@ -1,0 +1,80 @@
+body {
+    position: relative;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    backdrop-filter: blur(5px);
+    background-color: rgb(180, 28, 194); /* Fallback background color if the image fails to load */
+    background-attachment: fixed;
+    color: white;
+}
+
+body::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: rgba(0, 0, 0, 0.5); /* Adjust the alpha value (last parameter) for the desired opacity */
+    z-index: -1; /* Position the ::before pseudo-element below the content */
+}
+.box{
+    margin-top: 70px !important;
+    background-color: rgba(11, 12, 12, 0.8);
+    border-radius: 15px;
+}
+.main-heading h1{
+    font-size: 50px;
+    text-shadow: 5px -3px 5px rgb(65, 63, 63);
+    color: aqua;
+}
+.form-control {
+    padding: 15px;
+}
+#alert-box {
+    margin: 35px;
+}
+.form-select {
+    margin-top:15px ;
+    cursor: pointer;
+}
+.form-label{
+    font-size: larger !important;
+    font-weight: 500;
+}
+.input-box{
+    margin: 35px;
+}
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+.alert{
+    border: 1px solid red;
+}
+/* Firefox */
+input[type=number] {
+    -moz-appearance: textfield; /* For Firefox */
+    appearance: textfield; /* Standard */
+    -webkit-appearance: textfield; /* For webkit-based browsers (Chrome, Safari) */
+}
+.button-div {
+    margin-bottom: 50px;
+}
+#button {
+    padding: 15px 80px;
+    text-align: center;
+    color: bisque;
+    background-color: rgb(172, 36, 36);
+    font-size: larger;
+    font-weight: 600;
+}
+#button:hover {
+    background-color: green;
+}
+#button:active {
+    background-color: rgb(137, 206, 137);
+}
